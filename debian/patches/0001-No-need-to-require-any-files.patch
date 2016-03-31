@@ -1,0 +1,23 @@
+From: =?utf-8?q?David_Pr=C3=A9vot?= <david@tilapin.org>
+Date: Mon, 1 Feb 2016 21:10:05 -0400
+Subject: No need to require any files
+
+They are already loaded via Composer.
+
+Forwarded: https://github.com/padraic/mockery/pull/544
+---
+ tests/Mockery/LoaderTest.php | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/tests/Mockery/LoaderTest.php b/tests/Mockery/LoaderTest.php
+index b9f7056..d2f034f 100644
+--- a/tests/Mockery/LoaderTest.php
++++ b/tests/Mockery/LoaderTest.php
+@@ -29,7 +29,6 @@ class Mockery_LoaderTest extends PHPUnit_Framework_TestCase
+ 
+     public function testCallingRegisterRegistersSelfAsSplAutoloaderFunction()
+     {
+-        require_once 'Mockery/Loader.php';
+         $loader = new \Mockery\Loader;
+         $loader->register();
+         $expected = array($loader, 'loadClass');

@@ -1,0 +1,12 @@
+php-mockery (0.9.4-1build1) xenial; urgency=medium
+
+  * No-change rebuild against php 7
+
+ -- Nish Aravamudan <nish.aravamudan@canonical.com>  Thu, 31 Mar 2016 02:14:43 +0000
+
+php-mockery (0.9.4-1) unstable; urgency=low
+
+  * Initial release (new php-phpdocumentor-reflection-docblock
+    build-dependency)
+
+ -- David Prévot <taffit@debian.org>  Mon, 01 Feb 2016 20:34:59 -0400
